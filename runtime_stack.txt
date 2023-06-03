@@ -1,0 +1,34 @@
+1- Run time stack of problem 1 n=1994:
+//More than one digit number
+
+line 15 --> printNumRevRec(1)                                  prints --> 1
+Line 15 --> printNumRevRec(19)    --> printNumRevRec(1)    --> prints --> 9 
+Line 15 --> printNumRevRec(199)   --> printNumRevRev(19)   --> prints --> 9
+Line 15 --> printNumRevRec(1994)  --> printNumRevRec(199)  --> prints --> 4
+Line 6  --> main()
+
+Full print will be 4991
+
+//One digit n=9
+line 15 --> printNumRevRec(9)     --> 9
+Line 6  --> main()
+
+
+2- Run time stack of problem 2 n=613809:
+
+line 15 --> countDigitsRec(0)      --> 0 
+line 15 --> countDigitsRec(6)      --> 1 + countDigitsRec(0)      = 1 + 0 = 1
+line 15 --> countDigitsRec(61)     --> 1 + countDigitsRec(6)      = 1 + 1 = 2 
+line 15 --> countDigitsRec(613)    --> 1 + countDigitsRec(61)     = 1 + 2 = 3
+line 15 --> countDigitsRec(6138)   --> 1 + countDigitsRec(613)    = 1 + 3 = 4
+line 15 --> countDigitsRec(61380)  --> 1 + countDigitsRec(6138)   = 1 + 4 = 5
+line 15 --> countDigitsRec(613809) --> 1 + countDigitsRec(61380)  = 1 + 5 = 6
+Line 7  --> main()
+
+
+3- Run time stack of problem 3 arr={10.11}:
+
+line 14 --> countSumRec(arr, 0)                                           = 0
+line 14 --> countSumRec(arr, 1) --> arr[0] + countSumRec(0) -->  10 + 0   = 10
+line 14 --> countSumRec(arr, 2) --> arr[1] + countSumRec(1) -->  11 + 10  = 21 
+line 5  --> main() 
